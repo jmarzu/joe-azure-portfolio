@@ -1,0 +1,21 @@
+.web-dev {
+  background-image: none;
+}
+
+.mobile-section-background {
+  rotate: 90deg;
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .web-dev {
+    background-image: url('../../assets/sectionBackgrounds/Web_Developer.svg');
+  }
+}
+
+.word-cloud-container {
+  position: relative;
+  z-index: 1000;
+}

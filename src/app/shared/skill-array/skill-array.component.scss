@@ -1,0 +1,24 @@
+.skill{
+  font-weight: 300;
+  color:white;
+}
+
+.fade-item {
+  transition: 2s all ease-in-out;
+  opacity: 0;
+  padding-right: .5rem;
+}
+
+.fadein {
+  animation: fadeIn 0.9s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}

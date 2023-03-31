@@ -1,0 +1,55 @@
+<img class="img-top" src="assets/sectionBackgrounds/Bitmap.svg" alt="mobile-background">
+
+<nav class="navbar navbar-expand-lg px-4 pt-4 px-md-5 navbar-default navbar-dark">
+  <div class="container-fluid p-0 align-items-md-center">
+    <a routerLink="/home" class="navbar-brand text-decoration-none d-none d-md-inline-block">
+      <img class="img-fluid" src="assets/logos/Light_Bulb_3.svg" alt="Logo">
+    </a>
+    <a routerLink="/home" class="text-white w-50 text-decoration-none d-md-none">
+      <img class="img-fluid" src="assets/logos/Joe_Marzullo_Logo.svg" alt="Logo">
+    </a>
+    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-white"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-white text-center" id="menu">
+        <li class="nav-item">
+          <a [routerLinkActive]="['active-link']" [routerLink]="['/home']" class="nav-link">
+            <span class="ms-1">HOME</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLinkActive]="['active-link']" [routerLink]="['/about']" class="nav-link">
+            <span class="ms-1">ABOUT</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLinkActive]="['active-link']" [routerLink]="['/skills']" class="nav-link">
+            <span class="ms-1">SKILLS</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLinkActive]="['active-link']" [routerLink]="['/work']" class="nav-link">
+            <span class="ms-1">WORK</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLinkActive]="['active-link']" [routerLink]="['/contact']" class="nav-link">
+            <span class="ms-1">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a routerLink="/home" class="text-center d-none d-lg-inline text-white text-decoration-none">
+      <img class="img-fluid" src="assets/logos/Joe_Marzullo_Logo.svg" alt="Logo">
+    </a>
+  </div>
+</nav>
+
+<div class="conatiner-fluid px-5 py-2" [@triggerName]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+
+<img class="img-bottom" src="assets/sectionBackgrounds/Bitmap.svg" alt="mobile-background">
+
+

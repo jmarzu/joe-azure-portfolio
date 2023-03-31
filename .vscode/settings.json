@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2f3691e4-25cc-4119-9b60-2501f82b2295/resourceGroups/joe-profile-rg/providers/Microsoft.Web/sites/joemarzullo",
+    "appService.deploySubpath": "dist"
+}

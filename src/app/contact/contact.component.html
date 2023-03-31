@@ -1,0 +1,92 @@
+<div *ngIf="showAlert" [ngClass]="{ 'alert': showAlert }">
+  Thank you for sending a message!
+</div>
+<div>
+  <div>
+    <img class="img-fluid" src="assets/sectionBackgrounds/Contact.svg">
+  </div>
+  <div class="text-container">
+    <app-copy-block
+      title="Contact Me"
+      paragraph="I am open for Freelance and Consulting"
+    ></app-copy-block>
+    <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+      <div class="row">
+        <div class="form-group col-md">
+          <label for="name">Name</label>
+          <div>
+            <input
+              formControlName="name"
+              type="text"
+              class="form-control-lg"
+              id="name"
+              placeholder="Name"
+            >
+          </div>
+        </div>
+
+        <div class="form-group my-4 my-md-0 col-md">
+          <label for="email">Email address</label>
+          <div>
+            <input
+              formControlName="email"
+              type="email"
+              class="form-control-lg"
+              id="email"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group mb-4 my-md-4">
+        <label for="subject">Subject</label>
+        <div>
+          <input
+            formControlName="subject"
+            type="text"
+            class="form-control-lg"
+            id="subject"
+            placeholder="Subject"
+          >
+        </div>
+      </div>
+
+      <div class="form-group my-4">
+        <label for="message">Message</label>
+        <div>
+          <textarea
+            formControlName="message"
+            type="text"
+            class="form-control-lg"
+            id="message"
+            placeholder="Message"
+          ></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Contact Me</button>
+    </form>
+    <div class="row mt-3">
+      <div class="col">
+        <label for="linkedin">Find me on LinkedIn</label>
+        <app-skill-icon
+          id="linkedin"
+          [icon]="faLinkedIn"
+          href="https://www.linkedin.com/in/joe-marzullo-2978a075/"
+        ></app-skill-icon>
+      </div>
+
+      <div class="col">
+        <label for="github">Find me on GitHub</label>
+        <app-skill-icon
+          id="github"
+          [icon]="faGithub"
+          href="https://github.com/jmarzu"
+        ></app-skill-icon>
+      </div>
+    </div>
+  </div>
+</div>
+

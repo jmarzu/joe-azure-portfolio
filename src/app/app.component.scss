@@ -1,0 +1,69 @@
+.main-content {
+  color: #fff;
+  background-color: #000;
+}
+
+.container-fluid {
+  z-index: 10000;
+}
+
+.nav-link {
+  color: white;
+
+  &:hover {
+    color: #FFC700;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+
+  .navbar-toggler-icon {
+    background-image: url('../assets/logos/BulbState.svg');
+    height: 5rem !important;
+    width: 5rem !important;
+  }
+}
+
+#collapse {
+  position: absolute;
+  z-index: 1;
+}
+
+.active-link {
+  color: #FFC700;
+}
+
+.img-fluid {
+  height: 6rem;
+}
+
+li {
+  border-bottom: .5px solid black;
+}
+
+@media (min-width: 768px) {
+  li {
+    border-bottom: none;
+  }
+}
+
+.img-top, .img-bottom {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.img-top {
+  rotate: 180deg;
+}
+
+@media (min-width: 768px) {
+  .img-top, .img-bottom {
+    display: none;
+  }
+}
+
+
