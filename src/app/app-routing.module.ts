@@ -4,10 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-export const routeTransitionAnimations = trigger('triggerName', [
+export const routeTransitionAnimations = trigger('routeChange', [
   transition('* => *', [
-    query(':leave', style({ position: 'absolute', left: '3rem', height: '100%', right: '3rem', opacity: 1 }), { optional: true }),
-    query(':enter', style({ position: 'absolute', left: '3rem', height: '100%',right: '3rem', opacity: 0 }), { optional: true }),
+    query(':leave', style({ position: 'absolute', left: '.5rem', right: '.5rem', opacity: 1 }), { optional: true }),
+    query(':enter', style({ position: 'absolute', left: '.5rem', right: '.5rem', opacity: 0 }), { optional: true }),
     query(':leave', animate('.5s', style({ opacity: 0 })), { optional: true }),
     query(':enter', animate('.5s', style({ opacity: 1 })), { optional: true })
   ])

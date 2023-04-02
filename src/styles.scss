@@ -39,7 +39,6 @@ a {
 }
 
 .text-container {
-  margin-top: -20%;
   z-index: 1000;
   position: relative;
 }
@@ -47,6 +46,7 @@ a {
 @media (min-width: 768px) {
   .text-container {
     margin-left: 40%;
+    margin-top: -20%;
   }
 }
 

@@ -1,0 +1,13 @@
+.desktop-canvas {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .desktop-canvas {
+    display: block;
+  }
+
+  .mobile-canvas {
+    display: none;
+  }
+}

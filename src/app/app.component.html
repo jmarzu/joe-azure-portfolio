@@ -46,10 +46,11 @@
   </div>
 </nav>
 
-<div class="conatiner-fluid px-5 py-2" [@triggerName]="prepareRoute(outlet)">
-  <router-outlet #outlet="outlet"></router-outlet>
+<div class="router-container h-100 px-md-2">
+  <div [@routeChange]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
 </div>
 
 <img class="img-bottom" src="assets/sectionBackgrounds/Bitmap.svg" alt="mobile-background">
-
 
